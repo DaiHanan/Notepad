@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/note_item_bg">
+
+    <com.daimajia.swipe.SwipeLayout xmlns:swipe="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/swipe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        swipe:leftEdgeSwipeOffset="0dp"
+        swipe:rightEdgeSwipeOffset="0dp"
+        android:background="@drawable/note_item_bg">
+
+        <RelativeLayout
+            android:id="@+id/back_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/welcome_btn"
+            android:tag="Bottom3">
+
+            <ImageView
+                android:id="@+id/star"
+                android:layout_width="@dimen/size_icon"
+                android:layout_height="@dimen/size_icon"
+                android:src="@mipmap/star"
+                android:layout_toRightOf="@+id/left_side"
+                android:layout_marginLeft="@dimen/setting_margin"
+                android:layout_centerVertical="true"/>
+
+            <RelativeLayout
+                android:id="@+id/left_side"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_alignParentLeft="true">
+
+                <TextView
+                    android:id="@+id/isTop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/isTop"
+                    android:textColor="@color/colorBack"
+                    android:textSize="@dimen/font_big"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/big_interval"/>
+
+                <Button
+                    android:id="@+id/top"
+                    android:layout_width="@dimen/layout_btn_width"
+                    android:layout_height="@dimen/height_small_btn"
+                    android:background="@drawable/top_btn_bg"
+                    android:text="@string/top"
+                    android:textColor="@color/colorAccent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/big_interval"/>
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/trash"
+                android:layout_width="@dimen/size_icon"
+                android:layout_height="@dimen/size_icon"
+                android:src="@mipmap/trash"
+                android:layout_toLeftOf="@+id/right_side"
+                android:layout_marginRight="@dimen/setting_margin"
+                android:layout_centerVertical="true"/>
+
+            <RelativeLayout
+                android:id="@+id/right_side"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_alignParentRight="true">
+
+                <TextView
+                    android:id="@+id/isDelete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/isDelete"
+                    android:textColor="@color/colorBack"
+                    android:textSize="@dimen/font_big"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/big_interval"/>
+
+                <Button
+                    android:id="@+id/delete"
+                    android:layout_width="@dimen/layout_btn_width"
+                    android:layout_height="@dimen/height_small_btn"
+                    android:background="@drawable/del_btn_bg"
+                    android:text="@string/delete"
+                    android:textColor="@color/colorAccent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/big_interval"/>
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/fore_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/note_item_bg"
+            android:paddingLeft="@dimen/setting_margin"
+            android:paddingRight="@dimen/setting_margin"
+            android:paddingTop="@dimen/big_interval"
+            android:paddingBottom="@dimen/big_interval"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textSize="@dimen/font_text_small"
+                android:textColor="@color/colorFont"
+                android:text="@string/text_title"/>
+
+            <TextView
+                android:id="@+id/text_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="Hover"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textSize="@dimen/font_text_small"
+                android:textColor="@color/colorDark"
+                android:text="@string/text_data"/>
+
+            <TextView
+                android:id="@+id/text_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_small"
+                android:textColor="@color/colorShallowDark"
+                android:text="@string/text_time"
+                android:layout_marginTop="@dimen/interval"/>
+
+        </LinearLayout>
+    </com.daimajia.swipe.SwipeLayout>
+</LinearLayout>

@@ -1,0 +1,40 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!--tollbar主题 菜单图标为黑色-->
+    <style name="ToolBarTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorButtonNormal">@android:color/black</item>
+        <item name="colorControlNormal">@android:color/black</item>
+    </style>
+
+    <!--主页菜单弹出样式-->
+    <style name="OverflowMenuStyle"  parent="AppTheme.PopupOverlay">
+        <!-- 是否覆盖锚点 -->
+        <item name="overlapAnchor">false</item>
+        <item name="android:dropDownWidth">wrap_content</item>
+        <item name="android:paddingRight">@dimen/big_interval</item>
+        <!--todo 下列无效-->
+        <!-- 弹出层背景样式 -->
+        <item name="android:popupBackground">@drawable/overflow_bg</item>
+        <!-- 设置弹出菜单文字颜色 -->
+        <item name="android:textColor">@color/colorFont</item>
+        <!--<item name="android:dropDownListViewStyle">@style/AppDropDownListViewStyle</item>-->
+    </style>
+
+</resources>

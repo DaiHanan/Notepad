@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.SettingActivity"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/range_app_bar"
+    android:background="@color/colorBack">
+
+    <LinearLayout
+    android:id="@+id/app_title"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="@dimen/big_interval"
+    android:layout_marginLeft="@dimen/big_interval">
+
+    <ImageView
+        android:layout_width="@dimen/size_big_icon"
+        android:layout_height="@dimen/size_big_icon"
+        android:layout_gravity="center"
+        android:src="@mipmap/book" />
+
+    <TextView
+        android:id="@+id/app_title_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="@color/colorFont"
+        android:textSize="@dimen/font_app_title"
+        android:layout_gravity="center"/>
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/size_icon">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="@dimen/size_icon"
+            android:layout_height="@dimen/size_icon"
+            android:src="@mipmap/left"
+            android:layout_marginTop="@dimen/big_interval"
+            android:layout_marginLeft="@dimen/big_interval"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/setting_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/setting"
+            android:textColor="@color/colorFont"
+            android:textSize="@dimen/font_welcome_title"
+            android:layout_marginTop="@dimen/big_interval"
+            android:layout_marginLeft="@dimen/big_interval"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+
+    <!--便签样式-->
+    <LinearLayout
+        android:id="@+id/style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/setting_margin"
+        android:paddingEnd="@dimen/setting_margin"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/style_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/interval"
+            android:text="@string/style_title"
+            android:textColor="@color/colorShallowDark"
+            android:textSize="@dimen/font_small"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_line"
+            android:background="@color/colorPrimary"
+            android:layout_marginLeft="@dimen/interval"
+            android:layout_marginRight="@dimen/interval"/>
+
+        <!--文字大小-->
+        <RelativeLayout
+            android:id="@+id/font_size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/press_selector"
+            android:clickable="true"
+            android:paddingTop="@dimen/interval"
+            android:paddingBottom="@dimen/interval">
+
+            <TextView
+                android:id="@+id/font_size_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/interval"
+                android:text="@string/font_size"
+                android:textColor="@color/colorFont"
+                android:textSize="@dimen/font_big"/>
+
+            <TextView
+                android:id="@+id/font_size_now"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/font_size_right"
+                android:text="@string/font_size_default"
+                android:textColor="@color/colorDark"
+                android:textSize="@dimen/font_small" />
+
+            <ImageView
+                android:id="@+id/font_size_right"
+                android:layout_width="@dimen/size_mini_icon"
+                android:layout_height="@dimen/size_mini_icon"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/right_dark"
+                android:paddingRight="@dimen/big_interval"/>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_line"
+            android:background="@color/colorPrimary"
+            android:layout_marginLeft="@dimen/interval"
+            android:layout_marginRight="@dimen/interval"/>
+
+        <!--排序-->
+        <RelativeLayout
+            android:id="@+id/order_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/press_selector"
+            android:clickable="true"
+            android:paddingTop="@dimen/interval"
+            android:paddingBottom="@dimen/interval">
+
+            <TextView
+                android:id="@+id/order_type_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/interval"
+                android:text="@string/order_type"
+                android:textColor="@color/colorFont"
+                android:textSize="@dimen/font_big"/>
+
+            <TextView
+                android:id="@+id/order_type_now"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/order_type_right"
+                android:text="@string/order_type_default"
+                android:textColor="@color/colorDark"
+                android:textSize="@dimen/font_small" />
+
+            <ImageView
+                android:id="@+id/order_type_right"
+                android:layout_width="@dimen/size_mini_icon"
+                android:layout_height="@dimen/size_mini_icon"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/right_dark"
+                android:paddingRight="@dimen/big_interval"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_line"
+        android:background="@color/colorPrimary"/>
+
+    <!--用户设置-->
+    <LinearLayout
+        android:id="@+id/user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/setting_margin"
+        android:paddingEnd="@dimen/setting_margin"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/big_interval">
+
+        <TextView
+            android:id="@+id/user_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/interval"
+            android:text="@string/user_title"
+            android:textColor="@color/colorShallowDark"
+            android:textSize="@dimen/font_small"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_line"
+            android:background="@color/colorPrimary"
+            android:layout_marginLeft="@dimen/interval"
+            android:layout_marginRight="@dimen/interval"/>
+
+        <!--查看个人信息-->
+        <RelativeLayout
+            android:id="@+id/check_user_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/press_selector"
+            android:clickable="true"
+            android:paddingTop="@dimen/interval"
+            android:paddingBottom="@dimen/interval">
+
+            <TextView
+                android:id="@+id/check_user_info_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/interval"
+                android:text="@string/check_user_info"
+                android:textColor="@color/colorFont"
+                android:textSize="@dimen/font_big"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_line"
+        android:background="@color/colorPrimary"/>
+
+    <!--通用设置-->
+    <LinearLayout
+        android:id="@+id/normal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/setting_margin"
+        android:paddingEnd="@dimen/setting_margin"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/big_interval">
+
+        <TextView
+            android:id="@+id/normal_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/interval"
+            android:text="@string/normal_title"
+            android:textColor="@color/colorShallowDark"
+            android:textSize="@dimen/font_small"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_line"
+            android:background="@color/colorPrimary"
+            android:layout_marginLeft="@dimen/interval"
+            android:layout_marginRight="@dimen/interval"/>
+
+        <!--快捷删除-->
+        <RelativeLayout
+            android:id="@+id/quick_delete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/press_selector"
+            android:clickable="true"
+            android:paddingTop="@dimen/interval"
+            android:paddingBottom="@dimen/interval">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/interval"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/quick_delete_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/quick_delete"
+                    android:textColor="@color/colorFont"
+                    android:textSize="@dimen/font_big"/>
+
+                <TextView
+                    android:id="@+id/quick_delete_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/quick_delete_hint"
+                    android:textColor="@color/colorDark"
+                    android:textSize="@dimen/font_small"/>
+
+            </LinearLayout>
+
+            <Switch
+                android:id="@+id/quick_delete_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:thumb="@drawable/switch_thumb"
+                android:track="@drawable/switch_track"
+                android:layout_marginRight="@dimen/big_interval"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_line"
+        android:background="@color/colorPrimary"/>
+
+    <!--其他-->
+    <LinearLayout
+        android:id="@+id/others"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/setting_margin"
+        android:paddingEnd="@dimen/setting_margin"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/big_interval">
+
+        <TextView
+            android:id="@+id/others_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/interval"
+            android:text="@string/others"
+            android:textColor="@color/colorShallowDark"
+            android:textSize="@dimen/font_small"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_line"
+            android:background="@color/colorPrimary"
+            android:layout_marginLeft="@dimen/interval"
+            android:layout_marginRight="@dimen/interval"/>
+
+        <!--说明-->
+        <RelativeLayout
+            android:id="@+id/about"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/press_selector"
+            android:clickable="true"
+            android:paddingTop="@dimen/interval"
+            android:paddingBottom="@dimen/interval">
+
+            <TextView
+                android:id="@+id/about_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/about"
+                android:textColor="@color/colorFont"
+                android:textSize="@dimen/font_big"
+                android:padding="@dimen/interval"/>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_line"
+            android:background="@color/colorPrimary"
+            android:layout_marginLeft="@dimen/interval"
+            android:layout_marginRight="@dimen/interval"/>
+
+    </LinearLayout>
+
+</LinearLayout>

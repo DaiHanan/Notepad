@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.MainActivity"
+    android:layout_marginTop="@dimen/range_app_bar"
+    android:background="@color/colorPrimary">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            android:theme="@style/ToolBarTheme"
+            app:popupTheme="@style/OverflowMenuStyle">
+
+            <TextView
+                android:id="@+id/title_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/app_name"
+                android:textSize="@dimen/font_big"
+                android:textColor="@color/colorFont" />
+
+        </android.support.v7.widget.Toolbar>
+
+        <!--搜索框-->
+        <com.example.notepad.View.ClearEditText
+            android:id="@+id/search_text"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_btn"
+            android:background="@drawable/search_bg"
+            android:layout_marginStart="@dimen/big_interval"
+            android:layout_marginEnd="@dimen/big_interval"
+            android:textSize="@dimen/font_small"
+            android:hint="@string/search_hint"
+            android:textColor="@color/colorDark"
+            android:textColorHint="@color/colorDark"
+            android:drawableLeft="@mipmap/search"
+            android:drawablePadding="@dimen/big_interval"
+            android:drawableRight="@mipmap/cancel_dark"
+            android:paddingStart="@dimen/big_interval"
+            android:paddingEnd="@dimen/big_interval"
+            android:textCursorDrawable="@null"
+            tools:ignore="RtlHardcoded" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="@dimen/big_interval"
+        android:layout_marginStart="@dimen/big_interval"
+        android:layout_marginEnd="@dimen/big_interval"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/plus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/range_plus_bottom_right"
+        app:srcCompat="@mipmap/plus"
+        app:maxImageSize="@dimen/size_icon"
+        app:elevation="0dp"/>
+
+</RelativeLayout>

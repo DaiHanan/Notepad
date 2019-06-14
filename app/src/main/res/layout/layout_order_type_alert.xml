@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/overflow_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_btn"
+        android:gravity="center"
+        android:text="@string/order_type"
+        android:textColor="@color/colorFont"
+        android:textSize="@dimen/font_big"/>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_line"
+        android:background="@color/colorPrimary"/>
+
+    <!--小-->
+    <LinearLayout
+        android:id="@+id/create"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_btn">
+
+        <ImageView
+            android:id="@+id/icon_0"
+            android:layout_width="@dimen/size_minimax_icon"
+            android:layout_height="@dimen/size_minimax_icon"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/setting_margin"
+            android:src="@mipmap/right_accent"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/order_type_create"
+            android:textColor="@color/colorDark"
+            android:textSize="@dimen/font_text_normal"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/interval"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_line"
+        android:background="@color/colorPrimary"/>
+
+    <!--默认-->
+    <LinearLayout
+        android:id="@+id/modify"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_btn">
+
+        <ImageView
+            android:id="@+id/icon_1"
+            android:layout_width="@dimen/size_minimax_icon"
+            android:layout_height="@dimen/size_minimax_icon"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/setting_margin"
+            android:src="@mipmap/right_accent"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/order_type_modify"
+            android:textColor="@color/colorDark"
+            android:textSize="@dimen/font_text_normal"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/interval"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_line"
+        android:background="@color/colorPrimary"/>
+
+    <!--超大-->
+    <LinearLayout
+        android:id="@+id/cancel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_btn">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            android:textColor="@color/colorDark"
+            android:textSize="@dimen/font_text_normal"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/interval"/>
+
+    </LinearLayout>
+
+</LinearLayout>

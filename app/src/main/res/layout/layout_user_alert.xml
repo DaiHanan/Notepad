@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/overflow_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_btn"
+        android:gravity="center"
+        android:text="@string/change"
+        android:textColor="@color/colorFont"
+        android:textSize="@dimen/font_big" />
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_line"
+        android:background="@color/colorPrimary" />
+
+    <com.example.notepad.View.ClearEditText
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@null"
+        android:hint="@string/email_hint"
+        android:inputType="textEmailAddress"
+        android:textSize="@dimen/font_welcome_input"
+        android:layout_margin="@dimen/big_interval"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_line"
+        android:background="@color/colorPrimary" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/cancel"
+            android:textSize="@dimen/font_welcome_input"
+            android:textColor="@color/colorDark"
+            android:background="@color/colorBack"/>
+
+        <Button
+            android:id="@+id/sure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/sure"
+            android:textSize="@dimen/font_welcome_input"
+            android:textColor="@color/colorDark"
+            android:background="@color/colorBack"/>
+
+    </LinearLayout>
+
+</LinearLayout>

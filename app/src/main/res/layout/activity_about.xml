@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.AboutActivity"
+    android:background="@color/colorBack"
+    android:paddingBottom="@dimen/setting_margin"
+    android:paddingLeft="@dimen/setting_margin"
+    android:paddingRight="@dimen/setting_margin"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/setting_margin"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="@dimen/size_icon"
+                android:layout_height="@dimen/size_icon"
+                android:src="@mipmap/left"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="@dimen/setting_margin"/>
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/app_icon"
+                android:layout_centerInParent="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/icon"
+                android:layout_centerHorizontal="true"
+                android:text="@string/app_name"
+                android:textSize="@dimen/font_welcome"
+                android:textColor="@color/colorShallowDark"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorShallowDark"
+            android:textSize="@dimen/font_welcome_input"
+            android:text="@string/version"
+            android:gravity="center"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_line"
+            android:background="@color/colorShallowDark"
+            android:layout_marginTop="@dimen/big_interval"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/big_interval"
+            android:layout_marginBottom="@dimen/big_interval"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_big"
+                android:textColor="@color/colorDark"
+                android:text="@string/introduce_title"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_text_normal"
+                android:textColor="@color/colorDark"
+                android:text="@string/introduce_content"
+                android:layout_marginLeft="@dimen/setting_margin"
+                android:lineSpacingExtra="@dimen/interval"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_line"
+            android:background="@color/colorShallowDark"
+            android:layout_marginTop="@dimen/big_interval"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/big_interval"
+            android:layout_marginBottom="@dimen/big_interval"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_big"
+                android:textColor="@color/colorDark"
+                android:text="@string/update_title"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_text_normal"
+                android:textColor="@color/colorDark"
+                android:text="@string/update_content"
+                android:layout_marginLeft="@dimen/setting_margin"
+                android:lineSpacingExtra="@dimen/interval"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_line"
+            android:background="@color/colorShallowDark"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/big_interval"
+            android:layout_marginBottom="@dimen/big_interval"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_big"
+                android:textColor="@color/colorDark"
+                android:text="@string/author_title"
+                android:layout_gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_text_normal"
+                    android:textColor="@color/colorDark"
+                    android:text="@string/author_content"
+                    android:layout_marginLeft="@dimen/setting_margin"
+                    android:lineSpacingExtra="@dimen/interval"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/font_text_normal"
+                        android:textColor="@color/colorDark"
+                        android:text="@string/author_icon_title"
+                        android:layout_marginLeft="@dimen/setting_margin"
+                        android:lineSpacingExtra="@dimen/interval"/>
+
+                    <TextView
+                        android:id="@+id/click_to_see"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/font_text_normal"
+                        android:textColor="@color/colorAccent"
+                        android:text="@string/author_icon_content"
+                        android:lineSpacingExtra="@dimen/interval"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

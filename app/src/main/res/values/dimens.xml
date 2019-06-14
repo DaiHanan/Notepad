@@ -1,0 +1,63 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!--欢迎标题-->
+    <dimen name="font_welcome_title">40sp</dimen>
+    <!--app标题-->
+    <dimen name="font_app_title">30sp</dimen>
+    <!--欢迎字体-->
+    <dimen name="font_welcome">25sp</dimen>
+    <!--欢迎输入框字体-->
+    <dimen name="font_welcome_input">22sp</dimen>
+    <dimen name="font_big">15sp</dimen>
+    <dimen name="font_middle">13sp</dimen>
+    <dimen name="font_small">11sp</dimen>
+    <!--文本字体-->
+    <dimen name="font_text_small">13sp</dimen>
+    <dimen name="font_text_normal">16sp</dimen>
+    <dimen name="font_text_big">20sp</dimen>
+    <dimen name="font_text_super">28sp</dimen>
+
+    <!--图标大小-->
+    <dimen name="size_icon">30dp</dimen>
+    <dimen name="size_minimax_icon">12dp</dimen>
+    <dimen name="size_mini_icon">17dp</dimen>
+    <dimen name="size_small_icon">20dp</dimen>
+    <dimen name="size_little_small_icon">25dp</dimen>
+    <dimen name="size_big_icon">50dp</dimen>
+
+    <dimen name="interval">5dp</dimen>
+    <dimen name="big_interval">10dp</dimen>
+
+    <!--app标题距离和标题栏距离-->
+    <dimen name="range_app_bar">20dp</dimen>
+    <!--欢迎标题和app标题距离-->
+    <dimen name="range_welcome_app">100dp</dimen>
+    <!--欢迎标题和返回键距离-->
+    <dimen name="range_welcome_back">70dp</dimen><!--range_welcome_app 减去 size_icon-->
+    <!--添加和便签距离边界距离-->
+    <dimen name="range_plus_bottom_right">30dp</dimen>
+
+    <dimen name="setting_margin">20dp</dimen>
+
+    <dimen name="height_big_btn">43dp</dimen>
+    <dimen name="height_btn">38dp</dimen>
+    <dimen name="height_small_btn">30dp</dimen>
+    <dimen name="height_line">1dp</dimen>
+
+    <!--选择按钮-->
+    <dimen name="switch_radius">12dp</dimen>
+    <dimen name="switch_size">24dp</dimen>
+    <dimen name="switch_interval">3dp</dimen>
+
+    <!--便签高度-->
+    <dimen name="note_item_height">80dp</dimen>
+
+    <dimen name="layout_btn_width">100dp</dimen>
+
+    <dimen name="author_icon_width">100dp</dimen>
+
+    <!--询问框上下间隔-->
+    <dimen name="alert_margin">35dp</dimen>
+
+</resources>

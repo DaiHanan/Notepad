@@ -1,0 +1,96 @@
+<resources>
+    <string name="app_name">云记</string>
+    <string name="setting">设置</string>
+    <string name="model">模式切换</string>
+
+    <!--欢迎页面-->
+    <string name="login_title">登录</string>
+    <string name="login">登 录</string>
+    <string name="register_title">注册</string>
+    <string name="register">注 册</string>
+    <string name="forget_password_title">忘记密码</string>
+    <string name="forget_password_hint">通过邮箱重置密码</string>
+    <string name="send_email">发 送 邮 箱</string>
+    <string name="name_title">昵称</string>
+    <string name="email_title">邮箱</string>
+    <string name="password_title">密码</string>
+    <string name="name_hint">在这里输入昵称</string>
+    <string name="email_hint">在这里输入邮箱</string>
+    <string name="password_hint">在这里输入密码</string>
+
+    <string name="search_hint">搜索便签</string>
+
+    <!--设置页面-->
+    <string name="style_title">便签样式</string>
+    <string name="font_size">编辑时文字大小</string>
+    <string name="font_size_default">默认</string>
+    <string name="order_type">选择排序方式</string>
+    <string name="order_type_default">按编辑日期</string>
+
+    <string name="user_title">用户设置</string>
+    <string name="check_user_info">个人信息</string>
+    <string name="password_egg">上下左右BABA</string>
+    <string name="change">修改</string>
+
+    <string name="normal_title">通用设置</string>
+    <string name="quick_delete">快捷删除</string>
+    <string name="quick_delete_hint">删除便签时不显示确认对话框</string>
+
+    <string name="others">其他</string>
+    <string name="about">关于</string>
+
+    <string name="logoff">注 销</string>
+    <string name="sure_logoff">是否注销?</string>
+    <string name="sure_logoff_hint">有离线便签没有上传哦</string>
+
+    <!--文字大小-->
+    <string name="font_size_small">小</string>
+    <string name="font_size_normal">默认</string>
+    <string name="font_size_big">大</string>
+    <string name="font_size_super">超大</string>
+    <!--排序-->
+    <string name="order_type_create">按创建日期</string>
+    <string name="order_type_modify">按编辑日期</string>
+
+    <string name="cancel">取消</string>
+    <string name="sure">确定</string>
+
+    <string name="load">正在加载中</string>
+
+    <!--便签-->
+    <string name="isDelete">是否删除?</string>
+    <string name="sure_delete">确认删除?</string>
+    <string name="delete">删 除</string>
+    <string name="isTop">是否置顶?</string>
+    <string name="top">置 顶</string>
+    <string name="unTop">取消置顶</string>
+    <string name="text_title">标题</string>
+    <string name="text_data">正文</string>
+    <string name="text_time">时间</string>
+    
+    <string name="default_time">默认时间</string>
+    <string name="default_count">0</string>
+    <string name="count_tail">字</string>
+    
+    <!--关于-->
+    <string name="version">V 0.1.2</string>
+    <string name="introduce_title">功能介绍</string>
+    <string name="introduce_content">
+        便签服务\n
+        提供网络存储、离线记录功能\n
+        私人订制使用习惯\n
+        多种（误）便签显示方式</string>
+    <string name="update_title">最近更新</string>
+    <string name="update_content">
+        便签编辑新增功能：\n
+        撤销及重做\n
+        单击撤销以及长按快速撤销\n
+        单击重做以及长按快速重做</string>
+    <string name="author_title">作者介绍</string>
+    <string name="author_content">
+        昵称\t\t\t甙寒\n
+        邮箱\t\t\t503089627@qq.com</string>
+    <string name="author_icon_title">自拍\t\t\t</string>
+    <string name="author_icon_content">点击查看</string>
+
+</resources>

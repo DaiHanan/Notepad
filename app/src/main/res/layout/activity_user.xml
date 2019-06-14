@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".View.UserActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBack"
+
+    android:layout_marginTop="@dimen/range_app_bar">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorBack">
+
+        <LinearLayout
+            android:id="@+id/app_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/big_interval"
+            android:layout_marginLeft="@dimen/big_interval">
+
+            <ImageView
+                android:layout_width="@dimen/size_big_icon"
+                android:layout_height="@dimen/size_big_icon"
+                android:layout_gravity="center"
+                android:src="@mipmap/book" />
+
+            <TextView
+                android:id="@+id/app_title_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textColor="@color/colorFont"
+                android:textSize="@dimen/font_app_title"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/size_icon">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="@dimen/size_icon"
+                android:layout_height="@dimen/size_icon"
+                android:src="@mipmap/left"
+                android:layout_marginTop="@dimen/big_interval"
+                android:layout_marginLeft="@dimen/big_interval"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/setting_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/check_user_info"
+                android:textColor="@color/colorFont"
+                android:textSize="@dimen/font_welcome_title"
+                android:layout_marginTop="@dimen/big_interval"
+                android:layout_marginLeft="@dimen/big_interval"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+        <!--昵称-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/setting_margin"
+            android:paddingEnd="@dimen/setting_margin"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/interval"
+                android:text="@string/name_title"
+                android:textColor="@color/colorDark"
+                android:textSize="@dimen/font_big"
+                />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_line"
+                android:background="@color/colorPrimary"
+                android:layout_marginLeft="@dimen/interval"
+                android:layout_marginRight="@dimen/interval"/>
+
+            <RelativeLayout
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/press_selector"
+                android:clickable="true"
+                android:paddingTop="@dimen/interval"
+                android:paddingBottom="@dimen/interval">
+
+                <TextView
+                    android:id="@+id/name_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/interval"
+                    android:text="@string/name_title"
+                    android:textColor="@color/colorFont"
+                    android:textSize="@dimen/font_big"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_line"
+            android:background="@color/colorPrimary"/>
+
+        <!--邮箱-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/setting_margin"
+            android:paddingEnd="@dimen/setting_margin"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/email_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/interval"
+                android:text="@string/email_title"
+                android:textColor="@color/colorDark"
+                android:textSize="@dimen/font_big"
+                />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_line"
+                android:background="@color/colorPrimary"
+                android:layout_marginLeft="@dimen/interval"
+                android:layout_marginRight="@dimen/interval"/>
+
+            <RelativeLayout
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/press_selector"
+                android:clickable="true"
+                android:paddingTop="@dimen/interval"
+                android:paddingBottom="@dimen/interval">
+
+                <TextView
+                    android:id="@+id/email_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/interval"
+                    android:text="@string/email_title"
+                    android:textColor="@color/colorFont"
+                    android:textSize="@dimen/font_big"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_line"
+            android:background="@color/colorPrimary"/>
+
+        <!--密码-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/setting_margin"
+            android:paddingEnd="@dimen/setting_margin"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/password_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/interval"
+                android:text="@string/password_title"
+                android:textColor="@color/colorDark"
+                android:textSize="@dimen/font_big"
+                />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_line"
+                android:background="@color/colorPrimary"
+                android:layout_marginLeft="@dimen/interval"
+                android:layout_marginRight="@dimen/interval"/>
+
+            <RelativeLayout
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/press_selector"
+                android:clickable="true"
+                android:paddingTop="@dimen/interval"
+                android:paddingBottom="@dimen/interval">
+
+                <TextView
+                    android:id="@+id/password_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/interval"
+                    android:text="@string/password_egg"
+                    android:textColor="@color/colorFont"
+                    android:textSize="@dimen/font_big"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_line"
+            android:background="@color/colorPrimary"/>
+
+    </LinearLayout>
+
+    <!--按钮-->
+    <Button
+        android:id="@+id/logoff_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_btn"
+        android:background="@drawable/welcome_btn"
+        android:stateListAnimator="@null"
+        android:text="@string/logoff"
+        android:textColor="@color/colorBack"
+        android:textSize="@dimen/font_welcome"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/big_interval"/>
+
+</RelativeLayout>

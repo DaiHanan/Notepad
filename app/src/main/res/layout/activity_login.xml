@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBack"
+    android:layout_marginTop="@dimen/range_app_bar">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/fab_margin"
+        android:background="@color/colorBack"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/app_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/size_big_icon"
+                android:layout_height="@dimen/size_big_icon"
+                android:layout_gravity="center"
+                android:src="@mipmap/book" />
+
+            <TextView
+                android:id="@+id/app_title_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textColor="@color/colorFont"
+                android:textSize="@dimen/font_app_title"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/login_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/range_welcome_app"
+            android:text="@string/login_title"
+            android:textColor="@color/colorFont"
+            android:textSize="@dimen/font_welcome_title" />
+
+        <RelativeLayout
+            android:id="@+id/welcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin">
+            <!--邮箱-->
+            <LinearLayout
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/email_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/email_title"
+                    android:textColor="@color/colorFont"
+                    android:textSize="@dimen/font_welcome" />
+
+                <com.example.notepad.View.ClearEditText
+                    android:id="@+id/email_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/big_interval"
+                    android:background="@null"
+                    android:hint="@string/email_hint"
+                    android:inputType="textEmailAddress"
+                    android:textSize="@dimen/font_welcome_input" />
+
+            </LinearLayout>
+            <!--密码-->
+            <LinearLayout
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/email"
+                android:layout_marginTop="@dimen/big_interval">
+
+                <TextView
+                    android:id="@+id/password_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/password_title"
+                    android:textColor="@color/colorFont"
+                    android:textSize="@dimen/font_welcome" />
+
+                <com.example.notepad.View.ClearEditText
+                    android:id="@+id/password_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/big_interval"
+                    android:background="@null"
+                    android:hint="@string/password_hint"
+                    android:inputType="textPassword"
+                    android:textSize="@dimen/font_welcome_input" />
+
+            </LinearLayout>
+
+            <!--按钮-->
+            <Button
+                android:id="@+id/login_btn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_btn"
+                android:layout_below="@id/password"
+                android:layout_marginTop="@dimen/big_interval"
+                android:background="@drawable/welcome_btn"
+                android:stateListAnimator="@null"
+                android:text="@string/login"
+                android:textColor="@color/colorBack"
+                android:textSize="@dimen/font_welcome" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/login_btn"
+                android:layout_marginTop="@dimen/interval">
+
+                <Button
+                    android:id="@+id/forget_password_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/big_interval"
+                    android:layout_marginLeft="@dimen/big_interval"
+                    android:background="@null"
+                    android:gravity="start"
+                    android:text="@string/forget_password_title"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/font_big" />
+
+                <Button
+                    android:id="@+id/register_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="@dimen/big_interval"
+                    android:layout_marginEnd="@dimen/big_interval"
+                    android:background="@null"
+                    android:gravity="end"
+                    android:text="@string/register_title"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/font_big" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
