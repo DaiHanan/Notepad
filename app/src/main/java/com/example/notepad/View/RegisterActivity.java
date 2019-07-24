@@ -52,9 +52,9 @@ public class RegisterActivity extends BaseActivity implements View.OnClickListen
                 if (this.checkRegisterInfo()) {
                     //存放昵称、邮箱和密码
                     HashMap<String, String> msg = new HashMap<>();
-                    msg.put("name", this.etName.getText() != null ? this.etName.getText().toString() : "");
-                    msg.put("email", this.etEmail.getText() != null ? this.etEmail.getText().toString() : "");
-                    msg.put("password", this.etPassword.getText() != null ? this.etPassword.getText().toString() : "");
+                    msg.put(Config.NAME, this.etName.getText() != null ? this.etName.getText().toString() : "");
+                    msg.put(Config.EMAIL, this.etEmail.getText() != null ? this.etEmail.getText().toString() : "");
+                    msg.put(Config.PASSWORD, this.etPassword.getText() != null ? this.etPassword.getText().toString() : "");
                     //创建响应并发送请求 发送邮箱
                     Responce responce = new Responce();
                     HttpThread.startHttpThread(Config.URL_REGISTER, msg, responce, RegisterActivity.this);
@@ -64,7 +64,7 @@ public class RegisterActivity extends BaseActivity implements View.OnClickListen
                         Intent intent = new Intent();
                         Bundle bundle = new Bundle();
                         bundle.putBoolean(Config.FLAG, true);
-                        bundle.putString("email", this.etEmail.getText().toString());//填充邮箱
+                        bundle.putString(Config.EMAIL, this.etEmail.getText().toString());//填充邮箱
                         intent.putExtras(bundle);
                         //返回
                         setResult(RESULT_OK, intent);

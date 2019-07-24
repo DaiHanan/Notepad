@@ -52,7 +52,7 @@ public class ForgetActivity extends BaseActivity implements View.OnClickListener
                 if (etEmail.getText() != null && Util.checkEmail(etEmail.getText().toString())) {
                     //存放邮箱
                     HashMap<String, String> msg = new HashMap<>();
-                    msg.put("email", this.etEmail.getText().toString());
+                    msg.put(Config.EMAIL, this.etEmail.getText().toString());
                     //创建响应并发送请求 发送邮箱
                     Responce responce = new Responce();
                     HttpThread.startHttpThread(Config.URL_SEND_EMAIL, msg, responce, ForgetActivity.this);
